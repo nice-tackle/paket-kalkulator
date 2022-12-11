@@ -136,13 +136,13 @@
 
                 resultElement.innerHTML = `
             <h2>Prijem paketa putem pošte</h2>
-            <ul><li>Vrednost pošiljke je 50 ili više €</li>
+            <ul><li>Vrednost pošiljke je 50 € ili više </li>
  <li>Carinske dažbine koje se obračunavaju po stopi od 10 % na ukupnu realnu vrednost robe sa dodatom vrednošću transporta iznose: ${carina.toFixed(2)} €</li>
 <li>PDV koji se obračunava po stopi od 20% na ukupnu realnu vrednost pošiljke i dodatim iznosom pomenutih carinskih dažbina iznosi: ${vat.toFixed(2)} €</li>
 	    <li>Ukupan trošak: ${totalP.toFixed(2)} €</li></ul>
           `;
 
-                resultElement.innerHTML += `<h2>Prijem paketa putem kurirskih službi (DHL/UPS/FEDEX)</h2>  <ul><li>Vrednost pošiljke je 50 ili više €</li><li>Carinske dažbine koje se obračunavaju po stopi od 10 % na ukupnu realnu vrednost robe sa dodatom vrednošću transporta iznose: ${carina.toFixed(2)} €
+                resultElement.innerHTML += `<h2>Prijem paketa putem kurirskih službi (DHL/UPS/FEDEX)</h2>  <ul><li>Vrednost pošiljke je 50 € ili više</li><li>Carinske dažbine koje se obračunavaju po stopi od 10 % na ukupnu realnu vrednost robe sa dodatom vrednošću transporta iznose: ${carina.toFixed(2)} €
 
 </li><li>PDV koji se obračunava po stopi od 20% na ukupnu realnu vrednost pošiljke i dodatim iznosom pomenutih carinskih dažbina iznosi: ${vat.toFixed(2)} €</li><li>
 Usluga posredovanja u carinskom postupku iznosi: 30-60€</li> <li>Neophodno je dostaviti dokumentaciju za carinjenje</li><li>Ukupan trošak: ${totalKMin.toFixed(2)}-${totalKMax.toFixed(2)} €</li></ul></ul>

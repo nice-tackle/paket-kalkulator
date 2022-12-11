@@ -66,9 +66,13 @@
             font-size: 18px;
             width: 50%;
             display: block;
-            padding-bottom: 2%;
             margin-left: auto;
             margin-right: auto;
+            background-color: white;
+            padding: 10px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            border-radius: 25px;
         }
         
         .submit-button {
@@ -95,6 +99,11 @@
         ul li {
             padding: 5px;
         }
+
+        .hidden {
+            display: none;
+        }
+
     </style>
 
     <script>
@@ -104,6 +113,8 @@
             const resultElement = document.querySelector('.result');
 
             if (isNaN(inputValue) || isNaN(transport) || inputValue < 1 || transport < 0) return;
+
+            resultElement.classList.remove("hidden");
 
             if (inputValue < 50) {
                 const vat = (inputValue * 0.2).toFixed(2);
@@ -156,7 +167,7 @@ Usluga posredovanja u carinskom postupku iznosi: 30-60€</li> <li>Neophodno je 
             <button class="submit-button" onClick="onInputChange()" type="button">Izračunaj</button>
 
         </div>
-        <div class="result">
+        <div class="result hidden">
         </div>
     </div>
 </body>
